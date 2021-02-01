@@ -1,30 +1,52 @@
 var people = [
   {
-    name: 'Dev',
-    githubUsername: 'devjanaprime'
+    name: 'Josh',
+    githubUsername: 'joshgulledge',
   },
   {
-    name: 'Dane',
-    githubUsername: 'DoctorHowser'
+    name: 'Vada',
+    githubUsername: 'vkarlen',
   },
   {
-    name: 'Mary',
-    githubUsername: 'mbmosman'
+    name: 'Peter',
+    githubUsername: 'pnguy5724',
   },
   {
-    name: 'Kris',
-    githubUsername: 'kdszafranski'
+    name: 'Zack',
+    githubUsername: 'BuriedinDreams',
   },
   {
     name: 'Edan',
-    githubUsername: 'eschwartz'
+    githubUsername: 'eschwartz',
   },
   {
-    name: 'Casie',
-    githubUsername: 'cassandradanger'
+    name: 'Patrick',
+    githubUsername: 'patrickrnelson',
   },
   {
-    name: 'Chris',
-    githubUsername: 'christopher-black'
+    name: 'John B',
+    githubUsername: 'jmbielejeski',
+  },
+  {
+    name: 'Anthony',
+    githubUsername: 'MartSpeed',
+  },
+  {
+    name: 'McKynlee',
+    githubUsername: 'McKynlee',
+  },
+  {
+    name: 'William',
+    githubUsername: 'William-Krug',
+  },
+  {
+    name: 'John S',
+    githubUsername: 'Johnshandsable',
+  },
+  {
+    name: 'Alvin',
+    githubUsername: 'AlvinWong13',
   },
 ];
+
+let githubImg = `https://github.com/${people.githubUsername}.png?size=250`;
