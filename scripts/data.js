@@ -48,5 +48,3 @@ var people = [
     githubUsername: 'AlvinWong13',
   },
 ];
-
-let githubImg = `https://github.com/${people.githubUsername}.png?size=250`;
