@@ -1,14 +1,20 @@
 console.log('Here are all the available people:', people);
 
-let githubImg = `https://github.com/${people.githubUsername}.png?size=250`;
+$(document).ready(onReady);
 
-$(document).ready(displayPeople(people));
+function onReady() {
+  console.log('jQ running');
+  displayPeople(people);
+}
 
-function displayPeople() {
-  for (let person of people) {
+function displayPeople(group) {
+  console.log('in displayPeople');
+
+  for (let person of group) {
     $('#body').append(
       `<div> 
-        ${person.name} 
+      <img src="https://github.com/${person.githubUsername}.png?size=250" 
+      alt="${person.name}'s Photo">
       </div>`
     );
   }
