@@ -1,0 +1,13 @@
+body,
+#picFrame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffdf91;
+}
+
+img {
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+}
