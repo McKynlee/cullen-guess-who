@@ -14,22 +14,33 @@ function displayPeople(group) {
     $('#picFrame').append(
       `<div> 
       <img src="https://github.com/${person.githubUsername}.png?size=250" 
-      alt="${person.name}'s Photo" class="selectedImage">
+      alt="${person.name}'s Photo" class="selectedImage" 
+      data-value='${person.name}'>
       </div>`
     );
   }
-  randomNumber(0, 11);
+  randomName(0, 11);
 }
 
-function randomNumber(min, max) {
+function randomName(min, max) {
   console.log('in randomNumber');
   let chosenIndex = Math.floor(Math.random() * (1 + max - min) + min);
 
-  $('#nameGenerator').append(people[chosenIndex].name);
+  let randomNameGenerated = people[chosenIndex].name;
+  $('#nameGenerator').append(
+    `<span id="thisRando" data-name='${randomNameGenerated}'>
+    ${randomNameGenerated}
+    </span>`
+  );
 
   $('.selectedImage').on('click', imageChecker);
+  return randomNameGenerated;
 }
 
 function imageChecker() {
   console.log('in imageChecker');
+
+  if ($('#thisRando').data('name') == $(this).data('value')) {
+    alert('Success! Refresh page to play again.');
+  }
 }
