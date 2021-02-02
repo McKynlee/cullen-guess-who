@@ -1,7 +1,4 @@
 -[x] Update github profile photo -[x] Insert friends' github info -[x] use jQuery to append divs for each person in the data.js
 ----[x] Loop through people
-------[x]Each div contains img url for that person
--[] Show "Click on: ${randomly generated name}" on DOM
--[] if $(this).clicked === randomly generated person, then alert success!
------[] randomly generate another name to click
--[] if $(this).clicked !=, then error message.
+------[x]Each div contains img url for that person -[x] Show "Click on: ${randomly generated name}" on DOM -[x] if $(this).clicked === randomly generated person, then alert success!
+-----[] randomly generate another name to click -[x] if $(this).clicked !=, then error message.

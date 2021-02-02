@@ -42,5 +42,7 @@ function imageChecker() {
 
   if ($('#thisRando').data('name') == $(this).data('value')) {
     alert('Success! Refresh page to play again.');
+  } else {
+    alert('WRONG!  No worries, try again!');
   }
 }
