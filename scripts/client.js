@@ -14,7 +14,7 @@ function displayPeople(group) {
     $('#picFrame').append(
       `<div> 
       <img src="https://github.com/${person.githubUsername}.png?size=250" 
-      alt="${person.name}'s Photo">
+      alt="${person.name}'s Photo" class="selectedImage">
       </div>`
     );
   }
@@ -26,5 +26,10 @@ function randomNumber(min, max) {
   let chosenIndex = Math.floor(Math.random() * (1 + max - min) + min);
 
   $('#nameGenerator').append(people[chosenIndex].name);
-  console.log(people[chosenIndex].name);
+
+  $('.selectedImage').on('click', imageChecker);
+}
+
+function imageChecker() {
+  console.log('in imageChecker');
 }
